@@ -30,20 +30,20 @@
     <div class="flex flex-row items-center justify-between">
       <!--Logo-->
       <div class="pt-2 w-1/4 md:w-1/6">
-        <img src="images/CharisTech Logo.png" class="w-full md:w-3/4">
+        <a href="index.html"><img src="images/CharisTech Logo.png" class="w-full md:w-3/4"></a>
       </div>
 
        
 
       <!--Main Menu Items-->
-      <div id="navbarCollapse" class="hidden w3-animate-bottom md:flex space-x-6 text-darkBlue">
-          <a href="index.html" class="hover:text-charisBlue hover:text-[105%]">Home</a>
+      <div id="navbarCollapse" class="w3-animate-bottom md:flex space-x-6 text-darkBlue">
+          
           <a href="about.html" class="hover:text-charisBlue hover:text-[105%]">About</a>
           <a href="services.html" class="hover:text-charisBlue hover:text-[105%]">Services</a>
-          <a href="contact.html" class="hover:text-charisBlue hover:text-[105%]">Contact</a>   
+            
       </div>
 
-      <!--Free Consultation-->
+      <!--Free Consultation
       
       <a
           href="contact.html"
@@ -51,8 +51,23 @@
         >
           Get Started
       </a>
+  
 
-      <!-- Hamburger Icon -->
+       Mobile Menu 
+      <div class="md:hidden">
+        <div
+          id="menu"
+          class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md"
+        >
+          
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+         
+          
+        </div>
+      </div>
+
+      Hamburger Icon 
       <button
         id="menu-btn"
         class="block hamburger md:hidden focus:outline-none"
@@ -61,21 +76,7 @@
         <span class="hamburger-middle"></span>
         <span class="hamburger-bottom"></span>
       </button>
-  
-
-      <!-- Mobile Menu -->
-      <div class="md:hidden">
-        <div
-          id="menu"
-          class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md"
-        >
-          <a href="index.html">Home</a>
-          <a href="about.html">About</a>
-          <a href="services.html">Services</a>
-          <a href="contact.html">Contact</a>
-          
-        </div>
-      </div>
+      -->
     </div>
   </nav>
 <!-- ====== Navbar Section End -->
