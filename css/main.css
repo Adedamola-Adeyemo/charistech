@@ -73,7 +73,7 @@ body {
 .hamburger-bottom {
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
   width: 24px;
   height: 2px;
   background: #219ebc;
