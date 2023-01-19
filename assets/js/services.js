@@ -1,13 +1,13 @@
- // ===== Faq
- const faqs = document.querySelectorAll(".single-faq");
- faqs.forEach((el) => {
-   el.querySelector(".faq-btn").addEventListener("click", () => {
-     el.querySelector(".icon").classList.toggle("rotate-180");
-     el.querySelector(".faq-content").classList.toggle("hidden");
-   });
- });
+const btn = document.getElementById('menu-btn')
+const nav = document.getElementById('menu')
 
- function reveal() {
+btn.addEventListener('click', () => {
+  btn.classList.toggle('open')
+  nav.classList.toggle('flex')
+  nav.classList.toggle('hidden')
+})
+
+function reveal() {
   var reveals = document.querySelectorAll(".reveal");
 
   for (var i = 0; i < reveals.length; i++) {
@@ -24,3 +24,5 @@
 }
 
 window.addEventListener("scroll", reveal);
+
+
